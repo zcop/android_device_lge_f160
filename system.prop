@@ -1,0 +1,147 @@
+#
+# system.prop for surf
+#
+
+rild.libpath=/system/lib/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0
+ro.telephony.ril_class=LGEQualcommUiccRIL
+ro.telephony.ril.v3=qcomuiccstack
+ro.vendor.extension_library=/system/lib/libqc-opt.so
+ro.baseband.arch=msm
+ro.config.lte=true
+ro.telephony.default_network=10
+telephony.lteOnCdmaDevice=1
+telephony.lteOnGsmDevice=1
+ro.ril.shutdown=true
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10
+ro.config.ehrpd=true
+ro.config.svlte1x=true
+ro.cdma.subscribe_on_ruim_ready=true
+
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+#ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+debug.sf.hw=1
+debug.egl.hw=1
+debug.enabletr=true
+debug.composition.type=dyn
+ro.sf.compbypass.enable=1
+dev.pm.dyn_samplingrate=1
+
+sys.lge.core.manual=0
+
+ro.sf.lcd_density=320
+
+#lpa.use-stagefright=true
+
+#system props for the MM modules
+
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+
+#
+# system props for the data modules
+#
+ro.use_data_netmgrd=true
+persist.data.netmgrd.qos.enable=true
+
+#system props for time-services
+persist.timed.enable=true
+
+# System props for audio
+persist.audio.fluence.mode=endfire
+persist.audio.vr.enable=false
+persist.audio.handset.mic=analog
+
+# System prop to select audio resampler quality
+af.resampler.quality=255
+
+#
+# system prop for opengles version
+#
+# 131072 is decimal for 0x20000 to report version 2
+ro.opengles.version=131072
+
+#
+# system prop for Bluetooth Dialup Networking
+#
+# *s LGBT_COMMON_FUNCTION_DUN_DISABLE
+ro.qualcomm.bluetooth.dun=false
+# *e LGBT_COMMON_FUNCTION_DUN_DISABLE
+
+#
+# system prop for Bluetooth SAP Profile
+#
+#ro.qualcomm.bluetooth.sap=true
+# LGE_CHANGE_S, 20120514, jaehun7.kim@lge.com, disable SAP
+ro.qualcomm.bluetooth.sap=false
+# LGE_CHANGE_E
+
+# system prop for Bluetooth FTP profile
+ro.qualcomm.bluetooth.ftp=true
+#
+# system property for Bluetooth Handsfree Profile version
+#
+ro.bluetooth.hfp.ver=1.6
+#
+ro.qualcomm.bluetooth.hfp.wbs=true
+#system prop for Bluetooth hci transport
+ro.qualcomm.bt.hci_transport=smd
+#
+# system prop for requesting Master role in incoming Bluetooth connection.
+#
+#ro.bluetooth.request.master=true
+# LGE_CHANGE_S, 20120405, byoungsun.shon@lge.com, QCT_BT_COMMON_PATCH_SR00790218
+ro.bluetooth.request.master=false
+# LGE_CHANGE_E
+#
+# system prop for Bluetooth Auto connect for remote initated connections
+#
+ro.bluetooth.remote.autoconnect=true
+
+#system prop for switching gps driver to qmi
+persist.gps.qmienabled=true
+
+# System property for cabl
+ro.qualcomm.cabl=2
+
+# System props for telephony
+# System prop to turn on CdmaLTEPhone always
+telephony.lteOnCdmaDevice=1
+#
+# System prop for sending transmit power request to RIL during WiFi hotspot on/off
+#
+ro.ril.transmitpower=true
+
+#
+#Simulate sdcard on /data/media
+#
+persist.fuse_sdcard=true
+ro.hwui.text_cache_width=2048
+ro.nfc.port=I2C
+persist.data_netmgrd_mtu=1428
+ro.config.vc_call_vol_steps=9
+ro.config.vc_call_vol_default=5
+ro.hdmi.enable=true
+com.qc.hardware=true
+com.qc.hdmi_out=true
+wlan.chip.vendor=qcom
+wlan.chip.version=wcnss
+#lpa.decode=true
+
+wifi.interface=wlan0
+ro.crypto.fuse_sdcard=true
+dalvik.vm.dexopt-data-only=1

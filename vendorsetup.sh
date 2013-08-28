@@ -1,0 +1,2 @@
+add_lunch_combo cm_f160-userdebug
+add_lunch_combo cm_f160-eng

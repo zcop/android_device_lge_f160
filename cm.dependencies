@@ -1,0 +1,14 @@
+[
+  {
+      "repository": "android_device_lge_msm8960-common",
+      "target_path": "device/lge/msm8960-common"
+  },
+  {
+      "repository": "android_device_lge_qcom-common",
+      "target_path": "device/lge/qcom-common"
+  },
+  {
+      "repository": "android_kernel_lge_d1lsk",
+      "target_path": "kernel/lge/d1lsk"
+  }
+]
